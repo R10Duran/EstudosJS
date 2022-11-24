@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+  </head>
+  <body>
+    <!--Hyperlinks - Elemento Âncora: <a>
+      
+    + Anatomia
+
+    + Atributos:
+      - Globais (title, id, class)
+      - href
+        - para onde iremos, quando clicamos no link?
+          - url completa (https://www.google.com.br)
+          - fragmento (#home)
+          - email (mailto: meuEmail@gmail.com)
+          - telefone (tel:+5511)
+          - e outros
+      - dowload    (<a href="" dowload=""></a>)
+      - target (<a href="" target="_blank"></a>) abre uma nova aba e não fecha sua página.
+        - _self (padrão)
+        _blank
+    -->
+
+    <hr />
+
+    <h1>Teste com links</h1>
+    <p>Encontyre-me:</p>
+
+    <ul>
+      <li>
+        <a href="https://app.rocketseat.com.br" target="_blank"> Website</a>
+      </li>
+      <li><a href="mailto:robertwillian689@gmail.com">Email</a></li>
+      <li><a href="tel:+551199777777">Telefone</a></li>
+    </ul>
+
+    <hr />
+
+    <p>Saiba mais:</p>
+    <ul>
+      <li><a href="#about">Sobre mim</a></li>
+      <li><a href="#history">História</a></li>
+      <li><a href="#works">Trabalhos</a></li>
+    </ul>
+
+    <h2 id="about">Sobre mim</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore provident
+      accusamus laudantium? Accusantium vel itaque voluptas laborum nobis,
+      doloremque maiores molestias voluptatum quidem velit, iusto, quis
+      necessitatibus dicta aspernatur ratione. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Dolore provident accusamus laudantium?
+      Accusantium vel itaque voluptas laborum nobis, doloremque maiores
+      molestias voluptatum quidem velit, iusto, quis necessitatibus dicta
+      aspernatur ratione. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Dolore provident accusamus laudantium? Accusantium vel itaque
+      voluptas laborum nobis, doloremque maiores molestias voluptatum quidem
+      velit, iusto, quis necessitatibus dicta aspernatur ratione. Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Dolore provident accusamus
+      laudantium? Accusantium vel itaque voluptas laborum nobis, doloremque
+      maiores molestias voluptatum quidem velit, iusto, quis necessitatibus
+      dicta aspernatur ratione.
+    </p>
+
+    <h2 id="history">História</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore provident
+      accusamus laudantium? Accusantium vel itaque voluptas laborum nobis,
+      doloremque maiores molestias voluptatum quidem velit, iusto, quis
+      necessitatibus dicta aspernatur ratione. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Dolore provident accusamus laudantium?
+      Accusantium vel itaque voluptas laborum nobis, doloremque maiores
+      molestias voluptatum quidem velit, iusto, quis necessitatibus dicta
+      aspernatur ratione. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Dolore provident accusamus laudantium? Accusantium vel itaque
+      voluptas laborum nobis, doloremque maiores molestias voluptatum quidem
+      velit, iusto, quis necessitatibus dicta aspernatur ratione. Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Dolore provident accusamus
+      laudantium? Accusantium vel itaque voluptas laborum nobis, doloremque
+      maiores molestias voluptatum quidem velit, iusto, quis necessitatibus
+      dicta aspernatur ratione.
+    </p>
+
+    <h2 id="works">Trabalhos</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore provident
+      accusamus laudantium? Accusantium vel itaque voluptas laborum nobis,
+      doloremque maiores molestias voluptatum quidem velit, iusto, quis
+      necessitatibus dicta aspernatur ratione. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Dolore provident accusamus laudantium?
+      Accusantium vel itaque voluptas laborum nobis, doloremque maiores
+      molestias voluptatum quidem velit, iusto, quis necessitatibus dicta
+      aspernatur ratione. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Dolore provident accusamus laudantium? Accusantium vel itaque
+      voluptas laborum nobis, doloremque maiores molestias voluptatum quidem
+      velit, iusto, quis necessitatibus dicta aspernatur ratione. Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Dolore provident accusamus
+      laudantium? Accusantium vel itaque voluptas laborum nobis, doloremque
+      maiores molestias voluptatum quidem velit, iusto, quis necessitatibus
+      dicta aspernatur ratione.
+    </p>
+
+    <hr />
+
+    <!--Conteúdo dos hyperlinks - Início
+    
+      -qualquer conteúdo
+  
+
+    <a href="http://google.com.br" title="ir para o google" target="_blank">
+      <h1>google</h1>
+      <p>Claro que posso</p>
+      <img src="https://source.unsplash.com/random" alt="imagem aleatória" />
+    </a>
+    conteúdo dos hyperlinks - fim-->
+
+    <!--Caminhar entre as páginas - Início-->
+
+    <a href="elementos.html" target="_blank">Caminhar até elementos</a>
+
+    <!--Caminhar entre as páginas - fim-->
+
+    <!--Caminhar entre diretórios:
+    
+      - ../ = arquivos na pasta anterior
+      - ./ = arquivos no diretório raiz
+      - urls-caminhos.html = arquivo na mesma pasta
+      - ../outros/caminhos.html = arquivo na pasta outros
+    -->
+
+    <hr />
+
+    <!--URLs absolutos versus relativos
+    
+      -Absolutos
+        - inclui protocolo e nome de domínio
+          - http://www.rocktseat.com.br/projeto/index.html
+        - sempre apontará para o mesmo local, pois é absoluto
+      
+      - Relativos
+        - relativo à página no momento
+        - apontará para lugares diferentes
+    -->
+
+    <a href="google.com">relativo: ir para o Google</a>
+    <!--relativo a pasta-->
+    <br />
+    <br>
+    <a href="https://google.com">absoluto: ir para o google</a>
+  </body>
+</html>

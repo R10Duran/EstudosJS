@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkbox</title>
+  </head>
+  <body>
+    <!--
+
+    <input type="checkbox">
+
+    - caixas que podem ser marcadas
+    - selecionar um valor para ser enviado
+    - se não selecionado, não será enviado nenhum dado
+
+    # Atributos
+
+    - globais
+    - value
+      * valor que aquele campo contém
+      * se o valor estiver presente, o padrão é 'on'
+    - checked
+      * para deixar o campo marcado por padrão
+  -->
+
+    <label for="subscribe">Receber notificações</label>
+    <input type="checkbox" name="subscribe" id="subscribe" />
+
+    <fieldset>
+      <legend>Escolha seus interesses</legend>
+      <div>
+        <input
+          type="checkbox"
+          id="coding"
+          name="interest"
+          value="coding"
+          checked
+        />
+        <label for="coding">Codar</label>
+      </div>
+      <div>
+        <input type="checkbox" id="music" name="interest" value="music" />
+        <label for="music">Musicas</label>
+      </div>
+    </fieldset>
+  </body>
+</html>
