@@ -16,7 +16,7 @@
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm0iSY3YdXbvtPCe_t3JxGDH_vxdwl2XZCnQ&usqp=CAU"
       type="image/x-icon"
     />
-
+    <link rel="stylesheet" href="./cabecalho.css" />
     <!--Tags importantes para os motores de busca
 
       <meta>
@@ -48,6 +48,39 @@
     <title>Cabeçalho</title>
   </head>
   <body>
+    <section class="container">
+      <div class="conteudo-esquerda">
+        <div><h1>Conteúdo da esquerda</h1></div>
+      </div>
+      <div class="conteudo-card">
+        <div class="card">
+          <h2>Conteúdo da direita</h2>
+          <div class="card-body">
+            <h4>CARD</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellendus expedita dolorum minima unde neque architecto!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h3>Conteúdo footer</h3>
+    </footer>
+
+    <script>
+      var element = 'conteudo-card'
+      $(window).resize(function () {
+        if (window.innerWidth < 800) {
+          element.addClass('remove-card')
+        } else {
+          element.removeClass('remove-card')
+        }
+      })
+    </script>
+
     <!---->
   </body>
 </html>
