@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PopupSucesso</title>
+  </head>
+  <body>
+    <div class="popupSucessContent">
+      <button type="submit" class="btn" onclick="openPopupSucess()">
+        Enviar
+      </button>
+      <div class="popupInscriHB" id="popupSucess">
+        <h2>Obrigado!</h2>
+        <p>Formulário enviado com sucesso!</p>
+        <button type="button" onclick="closePopupSucess()">Ok</button>
+      </div>
+    </div>
+
+    <script>
+      let popupSucess = document.getElementById('popupSucess')
+
+      function openPopupSucess() {
+        popupSucess.classList.add('open-popup')
+      }
+
+      function closePopupSucess() {
+        popupSucess.classList.remove('open-popup')
+      }
+    </script>
+  </body>
+</html>
