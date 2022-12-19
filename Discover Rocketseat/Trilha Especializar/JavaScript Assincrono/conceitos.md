@@ -30,3 +30,19 @@ Olá mundo
 setTimeout(function(){
 console.log('Depois de 1s')
 }, 1000)
+
+### Conectando API com HTTPS e Callback
+
+const https = require('https')
+const API = 'https://jsonplaceholder.typicode.com/users?_limit=2'
+
+//res = resposta
+https.get(API, res => {
+console.log(res.statusCode)
+})
+
+console.log('conectando API')
+
+Resultado no console:
+conectando API
+200
